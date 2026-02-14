@@ -1,6 +1,6 @@
 # دفترچه راهنمای متدهای [Dictionary - دیکشنری](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) در پایتون
 
-در پایتون نوع داده‌ی `dict` یک مجموعه **مرتب 'ordered' (از پایتون نسخه 3.7 به بعد)** از زوج‌های **{ key : value }** است.
+در پایتون نوع داده‌ی `dict` یک مجموعه **مرتب 'ordered' (از پایتون نسخه 3.7 به بعد)** از زوج‌های **{ key: value }** است.
 
 * هر کلید **منحصر به فرد (unique)** و **غیر قابل تغییر (immutable)** است
 * کلید ها باید مقادیر immutable مثل str , tuple , float , int باشند
@@ -41,12 +41,10 @@
 
 > ### [dict.get(key, defult=None)](https://docs.python.org/3/library/stdtypes.html#dict.get)
 
-#### دسترسی به مقادیر - در صورت عدم وجود کلید مقدار تایین شده را برگردانید:
+#### دسترسی به مقادیر - در صورت عدم وجود کلید، مقدار پیش‌فرض را برمی‌گرداند:
 
 ```python
 >>> etc_dict = {'a': 1, 'b': 2}
->>> etc_dict.get('c')
-None
 >>> etc_dict.get('c', 0)
 0
 >>> etc_dict.get('c', 'NULL')
@@ -93,6 +91,7 @@ None
 ```python
 >>> etc_dict = {'a': 1, 'b': 2}
 >>> etc_dict.popitem()
+{'b': 2}
 >>> etc_dict
 {'a': 1}
 ```
@@ -100,6 +99,7 @@ None
 ```python
 >>> etc_dict = {'a': 1}
 >>> etc_dict.popitem()
+{'a': 1}
 >>> etc_dict
 {}
 ```
@@ -242,4 +242,5 @@ False
 | values  | مشاهده مقادیر                      |
 | items   | مشاهده جفت کلید:مقدارها            |
 | copy    | کپی سطحی گرفتن                     |
+
 
