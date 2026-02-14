@@ -104,7 +104,7 @@
 #### اندیس عناصر را نمایش دهید:
 ```python
 >>> etc_list = [1, 2, 3, 2, 4]
->>> etc_list.index(2) # اندیس اولین رخداد 2 از چپ را برگشت میدهد 
+>>> etc_list.index(2) # اندیس اولین رخداد 2 از چپ را برمی‌گرداند 
 1 
 
 >>> etc_list = [1, 2, 3, 5, 4]
@@ -126,7 +126,7 @@
 1
 ```
 
->### [list.sort(*, key=None, reverse=False)](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+> ### [list.sort(*, key=None, reverse=False)](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 ### مرتب‌سازی درجا:
 ```python
 >>> etc_list = [3, 1, 2]
@@ -217,5 +217,6 @@
 | sorted  | مرتب‌سازی و بازگشت لیست جدید  |
 | reverse | معکوس کردن درجا               |
 | copy    | کپی گرفتن                     |
+
 
 
