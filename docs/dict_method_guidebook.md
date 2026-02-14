@@ -169,7 +169,7 @@ dict_items([('a', 1), ('b', 2)])
 #### به مثال های زیر توجه کنید:
 
 ```python
->> > etc_dict = {'a': 1, 'b': 2}
+>>> etc_dict = {'a': 1, 'b': 2}
 
 >>> list(etc_dict.items())
 [('a', 1), ('b', 2)]
@@ -195,7 +195,7 @@ dict_items([('a', 1), ('b', 2)])
 ```
 
 ```python
->> > etc_dict = {'a': 1, 'b': 2}
+>>> etc_dict = {'a': 1, 'b': 2}
 
 >>> list(etc_dict.keys())
 ['a', 'b']
@@ -242,3 +242,4 @@ False
 | values  | مشاهده مقادیر                      |
 | items   | مشاهده جفت کلید:مقدارها            |
 | copy    | کپی سطحی گرفتن                     |
+
