@@ -3,7 +3,7 @@
 در پایتون نوع داده‌ی `dict` یک مجموعه **مرتب 'ordered' (از پایتون نسخه 3.7 به بعد)** از زوج‌های **{ key: value }** است.
 
 * هر کلید **منحصر به فرد (unique)** و **غیر قابل تغییر (immutable)** است
-* کلید ها باید مقادیر immutable مثل str , tuple , float , int باشند
+* کلیدها باید مقادیر immutable مثل str, tuple, float, int باشند
 * مقادیر می‌توانند تکراری باشند
 * قابل تغییر (mutable)
 
@@ -35,11 +35,11 @@
 {'a': 1, 'b': 20, 'c': 3}
 ```
 
-⚠️ درصورت عدم وجود کلید، خطا رخ میدهد.
+توجه: درصورت عدم وجود کلید، خطا رخ میدهد.
 
 # متد ها - Methods
 
-> ### [dict.get(key, defult=None)](https://docs.python.org/3/library/stdtypes.html#dict.get)
+> ### [dict.get(key, default=None)](https://docs.python.org/3/library/stdtypes.html#dict.get)
 
 #### دسترسی به مقادیر - در صورت عدم وجود کلید، مقدار پیش‌فرض را برمی‌گرداند:
 
@@ -130,7 +130,7 @@
 
 > ### [dict.keys()](https://docs.python.org/3/library/stdtypes.html#dict.keys)
 
-#### تمام کلید های دیکشنری را برگردانید:
+#### تمام کلیدهای دیکشنری را برگردانید:
 
 ```python
 >>> etc_dict = {'a': 1, 'b': 2}
@@ -140,7 +140,7 @@ dict_keys(['a', 'b'])
 
 > ### [dict.values()](https://docs.python.org/3/library/stdtypes.html#dict.values)
 
-#### تمام مقادیر کلید های دیکشنری را برگردانید:
+#### تمام مقادیر کلیدهای دیکشنری را برگردانید:
 
 ```python
 >>> etc_dict = {'a': 1, 'b': 2}
@@ -150,7 +150,7 @@ dict_values([1, 2])
 
 > ### [dict.items()](https://docs.python.org/3/library/stdtypes.html#dict.items)
 
-#### تمام مقادیر و کلید ها را به صورت های زوج های tuple برگردانید:
+#### تمام مقادیر و کلیدها را به صورت زوج‌های (key, value) برگردانید:
 
 ```python
 >>> etc_dict = {'a': 1, 'b': 2}
@@ -242,5 +242,6 @@ False
 | values  | مشاهده مقادیر                      |
 | items   | مشاهده جفت کلید:مقدارها            |
 | copy    | کپی سطحی گرفتن                     |
+
 
 
